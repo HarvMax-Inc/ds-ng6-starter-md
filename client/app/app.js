@@ -3,10 +3,15 @@ import uiRouter from 'angular-ui-router';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
+import ngMaterial from 'angular-material';
+import 'angular-material/angular-material.css';
 import 'normalize.css';
+
+console.log('ngMaterial', ngMaterial);
 
 angular.module('app', [
     uiRouter,
+    ngMaterial,
     Common.name,
     Components.name
   ])
