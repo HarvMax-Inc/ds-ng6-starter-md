@@ -5,9 +5,9 @@ import './dsNavItem.styl';
 let dsNavItemComponent = {
   restrict: 'E',
   bindings: {
-    dsNavClick: '@',
     dsNavHref: '@',
-    dsNavText: '@'
+    dsNavText: '@',
+    dsMenuItems: '<'
   },
   template,
   controller,

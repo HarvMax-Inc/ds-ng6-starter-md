@@ -1,6 +1,7 @@
-<md-nav-bar md-selected-nav-item="currentNavItem">
-  <ds-nav-item ng-repeat="item in vm.dsNavbarItems" ds-nav-href="#{{item.href}}" ds-nav-text="{{item.text}}"></ds-nav-item>
-  <ds-nav-item>
-    <ds-menu></ds-menu>
-  </ds-nav-item>
-</md-nav-bar>
+<div layout="row" layout-padding layout-align="space-between center">
+<div>
+    <ds-nav-item ng-repeat="item in vm.dsNavbarItems" ds-nav-text="{{item.text}}">
+    </ds-nav-item>
+    <ds-menu>
+    </ds-menu>
+</div>

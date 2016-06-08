@@ -9,7 +9,8 @@ let dsMenuComponent = {
   },
   template,
   controller,
-  controllerAs: 'vm'
+  controllerAs: 'vm',
+  transclude: true
 };
 
 export default dsMenuComponent;

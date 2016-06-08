@@ -4,6 +4,7 @@ class DsNavItemController {
     this.dsNavHref = '';
     this.dsNavClick = () => {};
     this.dsNavText = '';
+    this.dsMenuItems = '';
   }
 }
 

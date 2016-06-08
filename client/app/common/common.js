@@ -11,4 +11,11 @@ let commonModule = angular.module('app.common', [
   dsNavItem.name
 ]);
 
+commonModule.config(($mdThemingProvider) => {
+  $mdThemingProvider.theme('default')
+    .primaryPalette('purple')
+    .accentPalette('deep-purple')
+    .warnPalette('purple');
+});
+
 export default commonModule;
