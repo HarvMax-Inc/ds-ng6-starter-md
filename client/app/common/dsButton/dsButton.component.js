@@ -4,7 +4,10 @@ import './dsButton.styl';
 
 let dsButtonComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    dsButtonText: '@',
+    dsButtonImg: '@'
+  },
   template,
   controller,
   controllerAs: 'vm'

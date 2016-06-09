@@ -1,7 +1,6 @@
 <md-menu>
-  <md-button class="md-primary md-hue-2" ng-click="$mdOpenMenu()">{{ vm.name }}</md-button>
-  <!--<ds-button ng-click="$mdOpenMenu()"></ds-button>-->
-  <md-menu-content width="4">
+  <ds-button ng-click="$mdOpenMenu()" ds-button-text="{{vm.name}}"></ds-button>
+  <md-menu-content width="2">
     <ds-menu-item ng-repeat="item in vm.dsMenuItems" ds-button-text="{{item.text}}" ds-button-url="{{item.url}}">{{ item }}</ds-menu-item>
   </md-menu-content>
 </md-menu>

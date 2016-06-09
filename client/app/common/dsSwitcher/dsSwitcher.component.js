@@ -4,7 +4,9 @@ import './dsSwitcher.styl';
 
 let dsSwitcherComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    dsButtonImg: '@'
+  },
   template,
   controller,
   controllerAs: 'vm'
