@@ -8,6 +8,7 @@ import dsMenuTrigger from './dsMenuTrigger/dsMenuTrigger';
 import dsSwitcher from './dsSwitcher/dsSwitcher';
 import dsCard from './dsCard/dsCard';
 import dsButtonImg from './dsButtonImg/dsButtonImg';
+import dsToolbar from './dsToolbar/dsToolbar';
 
 let commonModule = angular.module('app.common', [
   dsNavbar.name,
@@ -17,7 +18,8 @@ let commonModule = angular.module('app.common', [
   dsButton.name,
   dsMenuTrigger.name,
   dsSwitcher.name,
-  dsButtonImg.name
+  dsButtonImg.name,
+  dsToolbar.name
 ]);
 
 commonModule.config(($mdThemingProvider) => {

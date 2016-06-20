@@ -1,7 +1,7 @@
 class DsSwitcherController {
   constructor() {
     this.name = 'dsSwitcher';
-    this.dsButtonImg = 'img/g192.png';
+    this.dsButtonImg = 'img/g4980.png';
   }
 }
 

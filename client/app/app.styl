@@ -1,3 +1,112 @@
 .app
   max-width 100%
   background-color $lightBgColor
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+
+}
+nav *{
+  font-family: "museoSlab500";
+  font-size:16px;
+  color: #989898 !important;
+}
+nav li, nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav li, nav a {
+  display: inline-block;
+  position: relative;
+}
+nav a {
+  padding: 20px;
+  text-decoration: none;
+  //font-size: .9em;
+  height:80px;
+}
+nav li a:before{
+  position: absolute;
+  top: 20%;
+  left: 0;
+  content:' ';
+  height: 40px;
+  width: 2px;
+  border-left: 2px solid #cbcbcb;
+}
+nav li:last-child a:after{
+  position: absolute;
+  top: 20%;
+  right: -10px;
+  content:' ';
+  height: 40px;
+  width: 2px;
+  border-left: 2px solid #cbcbcb;
+}
+nav li a.active:before {
+  border-left-color: #23C3F3;
+}
+nav li a:hover:before{
+  border-left-color: #23C3F3 !important;
+}
+nav li:hover + li:not(.active) a:before,
+nav li a:hover:after,
+nav li.active + li a:before,
+nav li a.active:after{
+  border-left-color: #ffffff;
+}
+
+
+a.active {
+  background: #23C3F3;
+  color: #fff !important;
+}
+nav span.nav-logo {
+  background-color: #23C3F3;
+  width:55px;
+  height:55px;
+  display:inline-block;
+}
+
+.no-bg{
+	background-color:transparent !important;
+}
+
+nav .nav-logos-container {
+  position: inherit;
+  margin-left:20px;
+  height:55px;
+}
+
+nav span.application-title{
+    margin-left: 50px;
+    padding-top: 11px;
+    font-size: 28px;
+    display: inline-block;
+    float: right;
+    line-height: 1em;
+}
+.nav-logo img{
+  width: 36px;
+  height:36px;
+  margin: 10px;
+}
+.menu-bottom{
+
+  background: #23C3F3;
+  height: 20px;
+  width: 100%;
+   position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
